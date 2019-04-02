@@ -1,0 +1,9 @@
+{
+  "name": "mfm_challenge",
+  "version": "0.0.0",
+  "description": "MFM_Challenge",
+  "main": "server.js",
+  "author": {
+    "name": "Jonathan"
+  }
+}
