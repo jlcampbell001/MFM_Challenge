@@ -1,0 +1,1 @@
+C:\Dev\JS\MFM_Challenge\MFM_Challenge\bin\Microsoft.NodejsTools.WebRole.dll

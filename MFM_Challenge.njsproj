@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ce6b576d-3b44-40f6-9d22-ce668cadea46</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,11 +30,19 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="server.js" />
+    <Compile Include="routes\bcypherapi.js" />
+    <Compile Include="public\js\mfmapp.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="app.js" />
+    <Content Include="public\index.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="views\" />
+    <Folder Include="public\js\" />
+    <Folder Include="routes\" />
+    <Folder Include="public\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\node\" />

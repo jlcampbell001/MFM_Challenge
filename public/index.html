@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="js/mfmapp.js"></script>
+    <link rel="stylesheet" href="stylesheets/mfmstyle.css">
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <div>
+            {{workAddrErr}}
+        </div>
+        <form ng-submit="getAddrData()">
+            <div class="col-lg-12">
+                <label class="col-lg-1 control-label">Address: </label>
+                <div class="col-lg-7">
+                    <input type="text" name="workAddr" ng-model="workAddress" class="form-control" />
+                </div>
+                <input class="btn submit-btn pull-right" type="submit" value="Look Up" />
+            </div>
+        </form>
+
+        <div class="col-lg-12">
+            <label class="col-lg-1 control-label">Balance: </label>
+            <div class="col-lg-7">
+                {{addrBalance}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

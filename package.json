@@ -5,5 +5,11 @@
   "main": "server.js",
   "author": {
     "name": "Jonathan"
+  },
+  "dependencies": {
+    "blockcypher": "^0.2.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
   }
 }
