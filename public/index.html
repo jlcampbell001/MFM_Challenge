@@ -30,6 +30,23 @@
                 {{addrBalance}}
             </div>
         </div>
+        <div class="col-lg-12">
+            <label class="col-lg-1">Transactions: </label>
+            <table>
+                <tr>
+                    <th>Date / Time</th>
+                    <th>Hash</th>
+                    <th>Amount</th>
+                </tr>
+                <tr ng-repeat="tran in workTrans">
+                    <td ng-if="tran.confirmed">{{tran.confirmed}}</td>
+                    <td ng-if="tran.received">{{tran.received}}</td>
+                    <td>{{tran.tx_hash}}</td>
+                    <td ng-if="tran.tx_output_n == -1">-{{tran.value}}</td>
+                    <td ng-if="tran.tx_input_n == -1">+{{tran.value}}</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

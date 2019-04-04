@@ -13,11 +13,21 @@ function printResponse(err, data) {
     }
 }
 
-//bcapi.getAddrBal(address, '', printResponse);
-
 router.route('/:id')
     .get(function (req, res) {
         bcapi.getAddrBal(req.params.id, '', function (err, data) {
+            if (err) {
+                console.log(err);
+                res.send(err);
+            }
+            console.log(data);
+            res.json(data);
+        });
+    });
+
+router.route('/transactions/:id')
+    .get(function (req, res) {
+        bcapi.getAddr(req.params.id, '', function (err, data) {
             if (err) {
                 console.log(err);
                 res.send(err);

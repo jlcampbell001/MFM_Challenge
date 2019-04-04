@@ -194,8 +194,19 @@ table {
 }
 
 td, th {
-    padding: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {

@@ -1,1 +1,2 @@
 C:\Dev\JS\MFM_Challenge\MFM_Challenge\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Dev\JS\MFM_Challenge\MFM_Challenge\obj\Debug\MFM_Challenge.njsprojResolveAssemblyReference.cache
