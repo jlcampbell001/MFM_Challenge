@@ -2,13 +2,15 @@
   "name": "mfm_challenge",
   "version": "0.0.0",
   "description": "MFM_Challenge",
-  "main": "server.js",
+  "main": "app.js",
   "author": {
     "name": "Jonathan"
   },
   "dependencies": {
     "blockcypher": "^0.2.0",
+    "eccrypto": "^1.1.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "secp256k1": "^3.6.2"
   }
 }
